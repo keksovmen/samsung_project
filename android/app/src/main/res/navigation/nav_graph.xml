@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/BoxListViewFragment">
+
+    <fragment
+        android:id="@+id/BoxListViewFragment"
+        android:name="com.keksovmen.flowerbox.BoxListViewFragment"
+        android:label="@string/box_list_view_fragment_label"
+        tools:layout="@layout/fragment_list_button_view">
+
+        <action
+            android:id="@+id/action_BoxListView_to_BoxView"
+            app:destination="@id/BoxViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/BoxViewFragment"
+        android:name="com.keksovmen.flowerbox.BoxViewFragment"
+        android:label="@string/box_view_fragment_label"
+        tools:layout="@layout/fragment_list_button_view">
+
+        <action
+            android:id="@+id/action_BoxView_to_DataView"
+            app:destination="@id/DataViewFragment" />
+<!--        <action-->
+<!--            android:id="@+id/action_BoxView_to_SwitchDataView"-->
+<!--            app:destination="@id/SwitchDataViewFragment" />-->
+    </fragment>
+
+    <fragment
+        android:id="@+id/DataViewFragment"
+        android:name="com.keksovmen.flowerbox.DataViewFragment"
+        android:label="@string/sensor_data_view_fragment_label"
+        tools:layout="@layout/fragment_tab_view">
+    </fragment>
+</navigation>

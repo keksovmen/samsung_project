@@ -1,0 +1,60 @@
+@startuml
+class FlowerBox
+{
+    unique_id: Number
+    name: String
+    version: String
+    ip: String
+    port: Number
+}
+
+class Sensor
+{
+    parent_id: Number
+    id: Number
+    tid: Number
+    name: String
+    description: String
+    value_type: String
+    min_value: Number
+    max_value: Number
+}
+
+class Switch
+{
+    parent_id: Number
+    id: Number
+    tid: Number
+    name: String
+    description: String
+    property_ids: String
+    sensor_ids: String
+}
+
+class Property
+{
+    parent_id: Number
+    id: Number
+    tid: Number
+    name: String
+    description: String
+    value_type: String
+    min_value: Number
+    max_value: Number
+    value: Number
+}
+
+class DataEntry
+{
+    box_id: Number
+    owner_id: Number
+    value: Number
+    timestamp: Date
+}
+
+FlowerBox "1" *-- "*" Sensor
+FlowerBox "1" *-- "*" Switch
+FlowerBox "1" *-- "*" Property
+Sensor "1" *-- "*" DataEntry
+Switch "1" *-- "*" DataEntry
+@enduml

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">FlowerBox</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="box_list_view_fragment_label">Box View</string>
+    <string name="box_view_fragment_label">Box View</string>
+    <string name="sensor_view_fragment_label">Sensor View</string>
+    <string name="switch_view_fragment_label">Switch View</string>
+    <string name="property_view_fragment_label">Property View</string>
+    <string name="sensor_data_view_fragment_label">Sensor Data View</string>
+    <string name="switch_data_view_fragment_label">Switch Data View</string>
+    <string name="connect_view_fragment_label">New Connection View</string>
+    <string name="wait_view_fragment_label">Wait View</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="ip_label_info">Enter IP as 192.168.0.100</string>
+    <string name="port_label_info">Enter port</string>
+    <string name="add_new_box_button">Connect</string>
+
+    <string name="connect_button">Connect new Box</string>
+    <string name="sync_button">Synchronize</string>
+    <string name="list_data_view">As List</string>
+    <string name="graph_data_view">As Graph</string>
+    <string name="sensors_view">Sensors</string>
+    <string name="switches_view">Switches</string>
+    <string name="properties_view">Properties</string>
+    <string name="error_network">Network error</string>
+    <string name="success_sync">Success</string>
+    <string name="property_change_value">Change value</string>
+    <string name="error_property_value">Illegal value</string>
+    <string name="wait_process">Waiting</string>
+    <string name="wait_msg">Please wait</string>
+    <string name="menu_item_delete">Delete</string>
+
+</resources>
